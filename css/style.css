@@ -1,0 +1,512 @@
+@font-face{
+  font-family: "geosans";
+  src: url("../font/GeosansLight.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: geosans;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.Blonde:hover{
+  background-color: #ffcc00;
+  transition : 0.5s;
+}
+
+.Brune:hover{
+  background-color: #804d00;
+  transition : 0.5s;
+}
+
+.Blanche:hover{
+  background-color: #f2f2f2;
+  transition : 0.5s;
+}
+
+.Rouge:hover{
+  background-color: #ff1a1a;
+  transition : 0.5s;
+}
+
+.Noir:hover{
+  background-color: #1a1a1a;
+  transition : 0.5s;
+}
+
+.Ambree:hover{
+  background-color: #ff9933;
+  transition : 0.5s;
+}
+
+.Blonde{
+  background-color: #c4c4c4;
+  transition : 0.5s;
+}
+
+.Brune{
+  background-color: #c4c4c4;
+  transition : 0.5s;
+}
+
+.Blanche{
+  background-color: #c4c4c4;
+  transition : 0.5s;
+}
+
+.Rouge{
+  background-color: #c4c4c4;
+  transition : 0.5s;
+}
+
+.Noir{
+  background-color: #c4c4c4;
+  transition : 0.5s;
+}
+
+.Ambree{
+  background-color: #c4c4c4;
+  transition : 0.5s;
+}
+
+.Blonde_m{
+  background-color: #ffcc00;
+}
+
+.Brune_m{
+  background-color: #804d00;
+}
+
+.Blanche_m{
+  background-color: #f2f2f2;
+}
+
+.Rouge_m{
+  background-color: #ff1a1a;
+}
+
+.Noir_m{
+  background-color: #1a1a1a;
+}
+
+.Ambree_m{
+  background-color: #ff9933;
+}
+
+
+
+.container{
+  margin: auto;
+  width: 80%;
+}
+
+.list_beer{
+  text-align: center;
+}
+
+.beer{
+  display: inline-block;
+  margin: 30px 30px;
+  padding: 20px;
+  position: relative;
+}
+
+.beer img{
+  width: 290px;
+  height: 470px;
+}
+
+.info_upload_image{
+  font-size: 9pt;
+  color: #a1a1a1;
+}
+
+.info_beer{
+  position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #e6e6e6;
+	opacity: 0.9;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 0.5s;
+}
+
+.beer_image{
+  width: 290px;
+  height: 470px;
+}
+
+.beer:hover .info_beer{
+  height: 30%;
+}
+
+.beer h1{
+ margin-bottom: 0;
+}
+
+.color{
+  font-size: 15pt;
+  margin: 0;
+  color: #444;
+}
+
+.unuser_link{
+  text-align: center;
+  color: #0d0d0d;
+  margin-top: 50px;
+  font-size: 13pt;
+}
+
+.unuser_link a{
+  color: #e64d00;
+}
+
+header{
+  margin-bottom: 100px;
+}
+
+.icon_add img{
+  width: 25px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0d0d0d;
+  padding: 0 20px;
+}
+
+.navbar .pseudo{
+  float: left;
+  margin-left: 50px;
+  font-size: 14pt;
+  color: #fff;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 25px;
+  background-color: inherit;
+  margin-right: 40px;
+  transition: 0.5s;
+}
+
+.dropbtn img{
+  width: 25px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f4f4f4;
+  transition: 0.5s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 60px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.dropdown a img{
+  width: 25px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo{
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+
+.logo img{
+  width: 500px;
+}
+
+.collection{
+	text-align: center;
+	margin: 20px;
+}
+
+.hr_small{
+	width: 200px;
+	color: #000;
+}
+
+.collection h3{
+	color: #1a1a1a;
+	margin-top: -15px
+}
+
+/*FORMULAIRE*/
+
+.form{
+	margin: auto;
+}
+
+.form select{
+	width: 310px;
+	height: 45px;
+	padding: 5px;
+	margin: 2px 0;
+	background-color: #008080;
+	color: #cccccc;
+	font-size: 12pt;
+	border: none;
+}
+
+.form textarea{
+  width: 300px;
+	height: 150px;
+	padding: 5px;
+	margin: 2px 0;
+	background-color: #003333;
+	color: #fff;
+	font-size: 12pt;
+	border: none;
+	resize: none;
+  padding-left: 10px;
+}
+
+.form .input{
+	width: 300px;
+	height: 45px;
+	padding: 5px;
+	margin: 2px 0;
+	background-color: #003333;
+	color: #fff;
+	font-size: 12pt;
+	border: none;
+	resize: none;
+  padding-left: 10px;
+}
+
+.form .sexe{
+	font-size: 15pt;
+}
+
+.form .register{
+	text-decoration: none;
+	color: #262626;
+	transition: 0.5s;
+  text-align: center;
+}
+
+.form .register:hover{
+	color: #006666;
+}
+
+.form .input_sub{
+	width: 310px;
+	height: 50px;
+  border: none;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	transition: 0.5s;
+	box-shadow: 6px 10px 17px 0px rgba(122,118,122,0.73);
+}
+
+.form .input_sub:hover{
+	background-color: #aaaaaa;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.error{
+	text-align: center;
+	font-size: 16pt;
+  color: red;
+}
+
+.display_info{
+  text-align: center;
+  border-top: solid 2px #a1a1a1;
+  border-bottom: solid 2px #a1a1a1;
+  padding: 100px;
+}
+
+.display_image{
+  padding: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.display_info table{
+  display: inline-block;
+  margin-left: 100px;
+  width: 400px;
+}
+
+.display_info table td{
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #1a1a1a;
+}
+
+.beer_name{
+  margin: 0;
+  font-size: 32pt;
+}
+
+.beer_color{
+  margin: 0;
+  border-bottom: solid 1px #a1a1a1;
+  padding-bottom: 10px;
+}
+
+.beer_alcohol{
+  padding-top: 10px;
+  margin: 0;
+  font-weight: lighter;
+  font-size: 10pt;
+}
+
+.beer_flavor{
+  font-weight: bold;
+  margin: 0;
+}
+
+.beer_price{
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 20pt;
+  border-bottom: solid 1px #a1a1a1;
+  padding-bottom: 10px;
+}
+
+.access_beer{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.access_beer a{
+  background-color: #0d0d0d;
+  display: inline-block;
+  width: 200px;
+  padding: 20px 0 20px 40px;
+  margin: 0 40px;
+  transition: 0.5s;
+  box-shadow: 6px 10px 17px 0px rgba(122,118,122,0.73);
+  font-size: 15pt;
+  color: #fff;
+}
+
+.access_beer a:hover{
+  background-color: #d0d0d0;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.add{
+  background-image: url("../images/icon_add.svg");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position-y: center;
+  background-position-x: 20px;
+}
+
+
+.edit{
+  background-image: url("../images/icon_edit.svg");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position-y: center;
+  background-position-x: 20px;
+}
+
+.trash{
+  background-image: url("../images/icon_trash.svg");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position-y: center;
+  background-position-x: 15px;
+}
+
+footer{
+	color: #404040;
+	padding-top: 30px;
+  background-color: #f2f2f2;
+  margin-top: 100px;
+  padding-bottom: 120px;
+}
+
+.info_legale{
+	list-style: none;
+	padding: 0px;
+	display: inline-block;
+}
+
+.info_legale li{
+	padding: 5px 0px;
+	transition: 0.5s;
+}
+
+.info_legale li:hover{
+	color: #595959;
+}
+
+.footer_right{
+	display: inline-block;
+	float: right;
+}
+
+.footer_right img{
+  width: 250px;
+}
+
+.copyright{
+	font-size: 13pt
+}
+
+.info_projet{
+  color: #fff;
+  margin-left: 50px;
+}
